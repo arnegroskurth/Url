@@ -1,6 +1,6 @@
 {
   "name": "arne-groskurth/url",
-  "description": "Url is a small class that helps dealing with Urls.",
+  "description": "Url is a small PHP class that helps dealing with Urls.",
   "keywords": ["url"],
   "homepage": "https://github.com/arnegroskurth/Url",
   "authors": [
