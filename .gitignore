@@ -1,0 +1,7 @@
+
+# IDEA
+.idea
+
+# Created during development/testing
+composer.lock
+vendor
