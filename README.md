@@ -1,10 +1,12 @@
 # Url
 
+[![Build Status](https://travis-ci.org/arnegroskurth/Url.svg?branch=master)](https://travis-ci.org/arnegroskurth/Url)
+[![codecov](https://codecov.io/gh/arnegroskurth/Url/branch/master/graph/badge.svg)](https://codecov.io/gh/arnegroskurth/Url)
+[![License](https://poser.pugx.org/arne-groskurth/url/license)](https://packagist.org/packages/arne-groskurth/url)
+
 Url is a small PHP class that helps dealing with Urls.
 
-## Installation
-
-TempFile is available on [Packagist](https://packagist.org/packages/arne-groskurth/url) and can therefore be installed via Composer:
+## Setup
 
 ```bash
 $ composer require arne-groskurth/url
@@ -42,27 +44,3 @@ print $url->resolveRelativeUrl('../other/path.html')->getUrl();
 print $url->resolveRelativeUrl('//domain.tld/')->getUrl();
 
 ```
-
-## License
-
-MIT License
-
-Copyright (c) 2016 Arne Groskurth
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
