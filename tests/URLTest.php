@@ -20,10 +20,19 @@ class UrlTest extends \PHPUnit_Framework_TestCase {
         $url->setQueryParameter('two', 2);
         $url->setFragment('myfrag');
 
-        static::assertEquals(
-            'http://username:password@www.test.com:8080/some/path.html?one=1&two=2#myfrag',
-            $url->getUrl()
-        );
+        $urlString = 'http://username:password@www.test.com:8080/some/path.html?one=1&two=2#myfrag';
+        static::assertEquals($urlString, $url->getUrl());
+        static::assertEquals($urlString, (string)$url);
+
+        static::assertEquals('http', $url->getScheme());
+        static::assertEquals('username', $url->getUser());
+        static::assertEquals('password', $url->getPass());
+        static::assertEquals('www.test.com', $url->getHost());
+        static::assertEquals(8080, $url->getPort());
+        static::assertEquals('/some/path.html', $url->getPath());
+        static::assertEquals(1, $url->getQueryParameter('one'));
+        static::assertEquals(2, $url->getQueryParameter('two'));
+        static::assertEquals('myfrag', $url->getFragment());
     }
 
     public function testReassembly() {
